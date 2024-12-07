@@ -2,7 +2,7 @@
 % Ethan Edmunds, Nov 2024
 
 % Define image folder name
-imageFolder = "defect_dataset_synthetic";
+imageFolder = "defect_dataset";
 
 % Collect data from image folder
 imds = imageDatastore(imageFolder, "IncludeSubfolders", true, "LabelSource", "foldernames");
@@ -23,8 +23,8 @@ imageAugmenter = imageDataAugmenter( ...
 % Define image size
 imageSize = [200 200];
 
-noBlocks = 9; % Number of blocks
-noFilters = 28; % Number of filters
+noBlocks = 8; % Number of blocks
+noFilters = 26; % Number of filters
 
 hyperParams = [noBlocks noFilters]; % Initialize hyperparameters
 
@@ -36,7 +36,7 @@ auxParams = [noClasses filterSize]; % Initialize aux parameters
 % Create network architecture
 networkArchitecture = createNetworkModel(hyperParams, auxParams, imageSize); % Create network architecture to be trained
 
-savePath = 'syntheticDatasetModelInformation'; % Name of folder to save model information to
+savePath = 'originalDatasetModelInformation'; % Name of folder to save model information to
 
 % Initiate for loop to randomly select training and validation datasets
 for i = 5:10
