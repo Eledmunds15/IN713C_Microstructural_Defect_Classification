@@ -4,6 +4,6 @@ This work explores the performance of Convolutional Neural Networks in classifyi
 
 This work was mainly conducted in MATLAB R2023b. Python and some of it's libraries have been used for minor data analysis.
 
-To cite the work: Edmunds & Thomas (2024) 
+To cite the work: Edmunds EL, Thomas M. Classification of microstructural defects in selective laser melted inconel 713C alloy using convolutional neural networks. Materials Science and Technology. 2025;0(0). doi:10.1177/02670836241308470
 
-Original micrographs sourced from: ...
+Original micrographs sourced from: Liu C. Selective laser melting of nickel superalloys for aerospace applications: defect analysis and material property optimisation. PhD Thesis, The University of Sheffield, UK, 2021.
